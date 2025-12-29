@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>Onclick</title>
+  <script>
+    function MyFunction(){
+      document.getElementById("value").innerHTML="Helllo,This Ragannagari Shiva";
+    }
+  </script>
+</head>
+<body>
+  <button onclick="MyFunction()">Click Me</button>
+  <p id="value">Printing the Value!!</p>
+  <p id="hello">Click!</p>
+  <script>
+    document.getElementById("hello").addEventListener("click",Helllo);
+    function Helllo(){
+      document.getElementById("hello").innerHTML="You clicked the link";
+      document.getElementById("hello").style.color='green';
+      document.getElementById("hello").style.background='cyan';
+    }
+  </script>
+</body>
+</html>

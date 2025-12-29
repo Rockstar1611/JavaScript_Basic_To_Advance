@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onkeydown,onkeypress,onkeyup</title>
+</head>
+<body><center>
+  <h1 style="color: green;">Element of Value-1</h1>
+  <p>Press any key inside the input field!</p>
+  <input type="text"id="inputFiled" style="background-color: rgb(86, 189, 210)">
+  <h1 style="color: orange;">Element of Value-2</h1>
+  <p>Press any key inside the input field!</p>
+  <input type="text"id="inputFiled" style="background-color: rgb(127, 195, 113)">
+  <h1 style="color: mediumslateblue;">Element of Value-3</h1>
+  <p>Press any key inside the input field!</p>
+  <input type="text"id="inputFiled" style="background-color: rgb(190, 83, 119)">
+  </center>
+  <script>
+    document.getElementById("inputField").addEventListener("keydown",FunV);
+    function FunV(){
+      document.getElementById("inputField").style.backgroundColor="yellow";
+    }
+    document.getElementById("inputField").addEventListener("keypress",FunU);
+    function FunU(){
+      document.getElementById("inputField").style.backgroundColor="yellow";
+    }
+    document.getElementById("inputField").addEventListener("keyup",FunW);
+    function FunW(){
+      document.getElementById("inputField").style.backgroundColor="yellow";
+    }
+  </script>
+</body>
+</html>

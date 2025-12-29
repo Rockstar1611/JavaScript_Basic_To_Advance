@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On change</title>
+</head>
+<style>
+  body{
+    text-align: center;
+  }
+  h1{color: rgb(53, 22, 166);}
+</style>
+<body>
+  <center>
+  <h1>On Change Value!!</h1>
+  <h2>onchange Event Attribute</h2>
+  <p>Choose Subject :</p>
+  <select id="FunV"onchange="funV()">
+    <option value="Computer Science">Computer Science</option>
+    <option value="Data Science">Data Science</option>
+    <option value="Operating Systems">Operating Systems</option>
+    <option value="Social Management">Social Management</option>
+    <option value="Envirenment Science">Envirenment Science</option></select>
+    <p id="sudo"></p>
+  </center>
+    <script>
+      function funV(){
+        let x=document.getElementById("FunV").value;
+        document.getElementById("sudo").innerHTML="Selected Subject : "+x;
+      }
+    </script>
+  </select>
+</body>
+</html>

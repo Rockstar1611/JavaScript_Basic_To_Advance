@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onsubmit,Onfocus</title>
+</head>
+<body>
+  <center>
+    <h1 style="color: blueviolet">Attribute Event</h1>
+    <h2>Html DOC Onsubmit event</h2>
+    <form id="formV"action="#">Enter name: 
+    <input type="text" placeholder="Enter the text"name="fname">
+    <input type="submit"value="Submit"></form>
+    <br>
+    <h2 style="color: rgb(54, 188, 92);">ONFOCUS Event!</h2>
+    Name :<input type="text" id="fname">
+  </center>
+  <script>
+    document.getElementById("formV").onsubmit=function(){Fun()};
+    function Fun(){
+      alert("Form submitted Successfully");
+    }
+    document.getElementById("fname").onfocus=function(){Fname()};
+    function Fname(){
+      document.getElementById("fname").style.backgroundColor="yellow";
+    }
+  </script>
+</body>
+</html>
