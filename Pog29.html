@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location</title>
+</head>
+<body><center>
+  <h1 style="color:aqua">Loaction Event</h1>
+  <b>DOM Location origin</b><br><br>
+  <button onclick="getOrigin();">Get Loaction Origin</button>
+  <p>The Location origin of this Page is:</p>
+  <div class="location"></div>
+  <br>
+  <h2 style="color:chartreuse 5px 2px 2px">Location Assign Method</h2>
+  <p>Click The "Load Document" button:</p>
+  <button ondblclick="load()">Load Document</button>
+  <script>
+    function getOrigin(){
+      let loc=location.origin;
+      document.querySelector('.location').innerHTML=loc;
+    }
+    function load(){
+      location.assign("https://youtu.be/lKjxgXhFS3A?si=rirF8l4beXuBeqs1");
+    }
+      
+  </script></center>
+</body>
+</html>

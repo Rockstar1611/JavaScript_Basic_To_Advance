@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation</title>
+  <style>
+    h1 {
+      color: rgb(16, 151, 106);
+      border: 2px solid grey;
+    }
+    h2 {
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    body {
+      text-align: center;
+      background-color: darkseagreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>Navigation Language</h1>
+  <h2>Property</h2>
+  <p>For checking the browser's language, double click the "Check Language" button:</p>
+  <button ondblclick="checklang()">Check Language</button>
+  
+  <p id="lang"></p>
+  
+  <script>
+    function checklang() {
+      var l = "Browser Language: " + navigator.language;
+      document.getElementById("lang").textContent = l;
+    }
+  </script>
+</body>
+</html>

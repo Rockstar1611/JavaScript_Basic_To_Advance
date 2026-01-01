@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Window Objects</title>
+</head>
+<body><center>
+  <h2>Alert Object</h2>
+  <button onclick="Alert()">Click Here</button>
+  <h2>Confirm Object</h2>
+  <button onclick="Confirm()">Delete</button>
+  <h2>Prompt Object</h2>
+  <button onclick="Prompt()">Click Here</button>
+  <h2>Open Object</h2>
+  <button onclick="Open()">Click Me</button>
+  <script>
+    function Alert(){
+      alert("Clicked the button");
+    }
+    function Confirm(){
+      var result=confirm/"you want to Delete?";
+      if(result){
+        alert("Deleted");
+      }
+      else{
+        alert("Not Deleted");
+      }
+    }
+    function Prompt(){
+      var name=prompt("Enter Your Name: ");
+      if(name!=null){
+        alert("Hello "+name+"!");
+      }
+      else{
+        alert("You not enter your name");
+      }
+    }
+    function Open(){
+      open("https://google.com");
+    }
+  </script></center>
+</body>
+</html>

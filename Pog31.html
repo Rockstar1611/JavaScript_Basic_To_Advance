@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=>, initial-scale=1.0">
+  <title>get Elements</title>
+</head>
+<body><center>
+  <h2 id="heading">Tage Name</h2>
+  <button onclick="Color()">Change</button>
+  <h3 id="hello">Class Name</h3>
+  <button onclick="Class()">Text Class</button>
+  <h1> Name tage</h1>
+  <input type="text"name="username">
+  <input type="text"name="email">
+  <input type="text"name="phone">
+  <button onclick="values()">Display</button>
+  <script>
+    function Color(){
+      var heading=document.getElementsByTagName("h2");
+      for(var i=0;i<heading.length;i++){
+        heading[i].style.color="red";
+      }
+    }
+    function Class(){
+      var ele=document.getElementsByClassName("hello");
+      hello.element.textcontent="Text Change!"
+    }
+    function values(){
+      var username=document.getElementsByName("username")[0];
+      var email=document.getElementsByName("email")[0];
+      var phone=document.getElementsByName("phone")[0];
+      console.log("Username: "+username.values);
+      console.log("Email: "+email.values);
+      console.log("Phone: "+phone.values);
+    }
+  </script></center>
+</body>
+</html>
